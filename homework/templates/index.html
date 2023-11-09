@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        {% for char in character %}
+            <p>{{ char.name }}</p>
+            <a href="{{ char.get_absolute_url }}">Details</a>
+        {% endfor %}
+    </div>
+</body>
+</html>
